@@ -6,7 +6,9 @@ data_dir = "./mvtec/bottle"
 train_data = []
 valid_data = []
 test_data = []
+print(len(os.listdir(data_dir+'/train/good')))
 for i in range(len(os.listdir(data_dir+'/train/good'))):
+    print(i)
     if(i < 10):
         im = Image.open(data_dir+'/train/good/00{}.png'.format(i))
     elif(i < 100):
