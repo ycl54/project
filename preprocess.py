@@ -7,6 +7,7 @@ train_data = []
 valid_data = []
 test_data = []
 print(len(os.listdir(data_dir+'/train/good')))
+print(os.listdir(data_dir+'/train/good'))
 for i in range(len(os.listdir(data_dir+'/train/good'))):
     print(i)
     if(i < 10):
