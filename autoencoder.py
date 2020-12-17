@@ -60,7 +60,6 @@ class AEModel(nn.Module):
         self.decoder3 = _ConvLayer_sigmoid(32, channel, 8, 1)
     def forward(self, x):
         x = self.encoder(x)
-        print(x.shape)
         x = self.decoder1(x)
         x = self.decoder2(x)
         x = self.decoder3(x)
